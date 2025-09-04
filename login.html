@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Login</a>
+        <a href="registro.html">Registro</a>
+        <a href="calendario.html">Calendario</a>
+        <a href="mis-turnos.html">Mis Turnos</a>
+    </nav>
+
+    <div class="container">
+        <h2>Iniciar Sesion</h2>
+        <form onsubmit="login(event)">
+            <label>Email:</label>
+            <input type="email" id="loginEmail" required>
+
+            <label>Contraseña:<label>
+            <input type="password" id="loginPassword" required>
+
+            <button type="submit">Ingresar</button>
+        </form>
+   </div>
+
+   <script src="js/app.js"></script>
+</body>
+</html>
