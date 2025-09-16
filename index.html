@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Turno</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Mi Turno</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="login.html">Login</a>
-        <a href="registro.html">Registro</a>
-        <a href="calendario.html">Calendario</a>
-        <a href="mis-turnos.html">Mis Turnos</a>
-    </nav>
+  <header>
+    <h1 class="logo"></h1>
+  <img src="logo-miturno.png" alt="MiTurno Logo">
+  </header>
 
-    <section class="hero">
-        <h1>Bienvenido A Mi Turno</h1>
-        <p>Reserva facil tus turnos</p>
-        <a class="btn" href="login.html">Empezar</a>
+  <main>
+    <h2>Bienvenido a <span class="resaltado">MiTurno</span>. ¿Cómo querés ingresar?</h2>
+
+    <div class="botones">
+      <a href="login.html" class="btn">SOY UN USUARIO</a>
+      <a href="registro.html" class="btn">SOY UNA EMPRESA</a>
+    </div>
+
+    <section class="descripcion">
+      <p>
+        Nuestra pagina es un sistema de <b>gestión de turnos online</b> pensado para 
+        <b>empresas de cualquier rubro</b> (peluquerías, talleres, consultorios, gimnasios, etc.) 
+        y sus clientes.  
+        El objetivo es digitalizar el proceso de reserva de turnos, 
+        <b>evitar llamadas telefónicas</b> y facilitar la 
+        <b>comunicación entre clientes y empresas</b>.
+      </p>
+      <p>
+        El sistema permite a los usuarios (clientes) registrarse, buscar empresas por categoría, ver la disponibilidad
+        de horarios y reservar turnos de manera simple.  
+        Por otro lado, las empresas pueden administrar sus horarios, servicios y turnos recibidos, además de comunicarse directamente con los clientes.
+      </p>
     </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MiTurno. Todos los derechos reservados</p>
+    <p>📞 +54 9 11 4444-4444 | 📧 miturno@gmail.com | 📍 Av. Corrientes 1353, Bs. As. (Argentina)</p>
+  </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
