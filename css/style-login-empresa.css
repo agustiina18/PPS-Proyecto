@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Estilos generales y fuente */
+body {
+    background-color: #ecf0f1;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal para centrar el contenido */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Ícono de inicio */
+.home-icon-link {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.home-icon {
+    width: 96px;
+    height: 96px;
+}
+
+/* Logo */
+.logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+/* Formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+/* email y contraseña */
+.input-group {
+    width: 100%;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    height: 75px;
+    padding: 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #C5C5C5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* Botón "Iniciar Sesión" */
+.submit-btn {
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    background-color: #ac0505;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #920404;
+}
+
+/* Enlaces de texto */
+.forgot-password,
+.no-account {
+    color: #ac0505;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.no-account {
+    margin-top: 10px;
+}
+
+/* Botón "Entrar con Google" */
+.google-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 53.76px;
+    background-color: #ecf0f1;
+    border: 3px solid #C3C3C3;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ac0505;
+}
+
+.google-login-btn span {
+    color: #ac0505;
+    margin-right: 5px;
+}
+
+.google-login-btn img {
+    width: 30px;
+    height: 45px;
+    vertical-align: middle;
+
+    
+}
+
+/* Botón "Crear una cuenta" */
+.create-account-btn {
+    display: block;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    background-color: transparent;
+    color: #ac0505;
+    border: 2px solid #ac0505;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.create-account-btn:hover {
+    background-color: #ac0505;
+    color: #fff;
+}
+
+/* Pie de página */
+.footer {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+}
+
+.footer-top {
+    margin-bottom: 10px;
+}
+
+.footer-top .social-icons a {
+    margin: 0 8px;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-top p {
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+    color: #444;
+}
+
+.footer-bottom span {
+    margin: 5px 6px;
+    display: inline-block;
+}
+
+.footer-bottom i {
+    margin-right: 5px;
+}
+
+/* Media Query */
+@media (min-width: 769px) {
+    .logo {
+        width: 383px;
+        height: 138px;
+        max-width: none;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .input-group,
+    .submit-btn,
+    .create-account-btn {
+        width: 360px;
+        max-width: none;
+    }
+
+    .google-login-btn {
+        width: 195px;
+        max-width: none;
+    }
+}
+
+/* Media Query para móviles*/
+@media (max-width: 768px) {
+    .home-icon-link {
+        top: 20px; 
+        left: 15px;
+    }
+
+    .home-icon {
+        width: 40px; /* Se reduce el tamaño del ícono */
+        height: 40px;
+    }
+
+    .logo {
+        width: 180px; /* Se reduce el tamaño del logo */
+        margin-top: 60px; /* Se baja el logo para que no se superponga */
+    }
+
+    
+}
