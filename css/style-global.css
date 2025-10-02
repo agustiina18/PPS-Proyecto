@@ -1,19 +1,178 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* Estilos generales y fuente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======== PÁGINA PRINCIPAL / LOGIN ======== */
 body {
-    background-color: #ecf0f1;
+    background: #f2f4f5;
+    color: #333;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
+    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    justify-content: flex-start;
 }
 
-/* Contenedor principal para centrar el contenido */
+/* HEADER / LOGO */
+header {
+    width: 100%;
+    padding-top: 60px; /* Verificar la prox para que todas figuren igual que el index*/
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 400px;
+    height: auto;
+    max-width: 90%;
+
+
+}
+
+/* TITULO PRINCIPAL */
+main h2 {
+    max-width: 600px;
+    width: 90%;
+    margin: 50px auto 30px auto;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-align: center;
+    color: #333;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.resaltado {
+    font-weight: 800;
+    font-style: italic;
+    color: #b71c1c;
+}
+
+/* BOTONES */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto 50px auto;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 850px;
+    /* Limita el ancho del contenedor */
+
+}
+
+.btn {
+    width: 384.45px;
+    height: 99px;
+    line-height: 99px;
+    text-align: center;
+
+    background: #b71c1c;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* DESCRIPCIÓN */
+.descripcion {
+    max-width: 992px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+
+    background: #000000;
+    opacity: 1;
+
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+
+.footer {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    background-color: #f2f4f5;
+}
+
+.footer-top {
+    margin-bottom: 10px;
+}
+
+.footer-top .social-icons a {
+    margin: 0 8px;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-top p {
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+    color: #444;
+}
+
+.footer-bottom span {
+    margin: 5px 6px;
+    display: inline-block;
+}
+
+.footer-bottom i {
+    margin-right: 5px;
+}
+
+
+/* Contenedor principal */
 .login-container {
     display: flex;
     flex-direction: column;
@@ -60,11 +219,13 @@ body {
 
 input[type="email"],
 input[type="password"],
-input[type="text"], /* Agregado */
-input[type="tel"], /* Agregado */
-input[type="url"], /* Agregado */
-input[type="file"]
- {
+input[type="text"],
+/* Agregado */
+input[type="tel"],
+/* Agregado */
+input[type="url"],
+/* Agregado */
+input[type="file"] {
     width: 100%;
     height: 75px;
     padding: 0 20px;
@@ -145,7 +306,7 @@ input::placeholder {
     height: 45px;
     vertical-align: middle;
 
-    
+
 }
 
 /* Botón "Crear una cuenta" */
@@ -170,22 +331,20 @@ input::placeholder {
     color: #fff;
 }
 
-/* Contenedor del input de archivo para el logo */
 .logo-upload-group {
-    /* Asegura que tome el ancho de los demás inputs del formulario */
-    width: 100%; 
-    max-width: 350px; /* Ajusta este valor si tus inputs son más anchos */
+    width: 100%;
+    max-width: 350px;
     margin-bottom: 15px;
 }
 
-/* Estilo para la etiqueta que funciona como botón de carga de logo */
+/*botón de carga de logo */
 .logo-upload-btn {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 15px 20px;
-    background-color: #fff; /* Fondo blanco como los inputs */
-    border: 3px solid #C3C3C3; /* Borde gris como los inputs */
+    background-color: #fff;
+    border: 3px solid #C3C3C3;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -193,7 +352,7 @@ input::placeholder {
     color: #333;
     cursor: pointer;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     transition: background-color 0.3s;
 }
 
@@ -202,20 +361,18 @@ input::placeholder {
 }
 
 .logo-upload-btn img {
-    /* Estilo para la imagen "Group 1" */
     width: 24px;
     height: auto;
     margin-right: 10px;
 }
 
-/* Estilo para el nombre de archivo a la derecha */
 #logoFileName {
     font-size: 0.8rem;
     font-style: italic;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 150px; /* Limita el ancho para que no se superponga */
+    max-width: 150px;
 }
 
 /* Pie de página */
@@ -297,19 +454,39 @@ input::placeholder {
 /* Media Query para móviles*/
 @media (max-width: 768px) {
     .home-icon-link {
-        top: 20px; 
+        top: 20px;
         left: 15px;
     }
 
     .home-icon {
-        width: 40px; /* Se reduce el tamaño del ícono */
+        width: 40px;
         height: 40px;
     }
 
     .logo {
-        width: 180px; /* Se reduce el tamaño del logo */
-        margin-top: 60px; /* Se baja el logo para que no se superponga */
+        width: 180px;
+        margin-top: 60px;
     }
 
-    
+    .botones {
+        flex-direction: column;
+        gap: 15px;
+        width: 80%;
+    }
+
+    .btn {
+        width: 100%;
+        min-width: 0;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    main h2 {
+        font-size: 24px;
+        margin: 30px auto 20px auto;
+    }
+
+    header img {
+        width: 200px;
+    }
 }
