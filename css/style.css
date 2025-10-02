@@ -15,13 +15,16 @@ body {
 }
 
 /* ======== HEADER / LOGO ======== */
-.logo img {
-  position: absolute;
+header {
+  display: flex; /* Añadir */
+  justify-content: center; /* Añadir */
+  padding-top: 50px; /* Ajusta el espacio superior */
+}
+
+header img { /* Selector más simple para el <img> */
   width: 583px;
   height: 211px;
-  top: 67px;
-  left: 526px;
-
+  /* Eliminar position, top, y left */
 }
 
 .logo span {
@@ -58,17 +61,20 @@ main h2 {
 
 /* ======== BOTONES ======== */
 .botones {
-  position: relative;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  gap: 30px; /* Espacio entre los botones */
+  margin-top: 30px; /* Espacio después del título */
+  margin-bottom: 50px;
 }
 
 .btn {
-  position: absolute;
   width: 384.45px;
   height: 99px;
   line-height: 99px;
   text-align: center;
 
-  background: #b71c1c;
+  background: #ac0505;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
@@ -90,15 +96,6 @@ main h2 {
   transform: scale(1.02);
 }
 
-.usuario {
-  top: 459px;
-  left: 547px;
-}
-
-.empresa {
-  top: 459px;
-  left: 988px;
-}
 
 /* ======== DESCRIPCIÓN ======== */
 .descripcion {
@@ -121,7 +118,7 @@ main h2 {
 }
 
 /* ======== FOOTER ======== */
-.footer {
+footer {
   position: absolute;
   width: 812px;
   height: 71px;

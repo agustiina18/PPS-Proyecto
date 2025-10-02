@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <title>Login - MiTurno</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style-global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-  <!-- Botón Home -->
-  <a href="index.html" class="home-btn">
-  <img src="home.png" alt="Inicio">
-</a>
-
-<div class="login-container">
-  <div class="logo">Mi<span>Turno</span></div>
-
-  <form class="form-login">
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Contraseña">
-    <button type="submit" class="btn btn-login">Iniciar Sesión</button>
-  </form>
-
-  <a href="#" class="link-forgot">¿Olvidaste tu contraseña?</a>
-
-  <button type="button" class="btn-google">
-    <img src="google.png" alt="Google"> Entrar con Google
-  </button>
-
-  <p class="link-register">
-    ¿No tienes cuenta? <a href="#">Regístrate</a>
-  </p>
-
-  <a href="register.html" class="btn-outline">Crea una cuenta</a>
-</div>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 MiTurno. Todos los derechos reservados</p>
-    <p>📞 +54 9 11 4444-4444 | 📧 miturno@gmail.com | 📍 Av. Corrientes 1353, Bs. As. (Argentina)</p>
+  <div class="login-container">
+    <a href="index.html" class="home-icon-link">
+      <img src="img/home.png" alt="Inicio" class="home-icon">
+    </a>
+    <img src="img/logo-miturno.png" alt="Mi Turno Logo" class="logo">
+    <form onsubmit="login(event)" class="login-form">
+      <div class="input-group">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="loginPassword" placeholder="Contraseña" required>
+      </div>
+      <button type="submit" class="submit-btn">Iniciar Sesión</button>
+      <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+      <button type="button" class="google-login-btn">
+        <span>Entrar con</span> <img src="img/icono-google.png" alt="Google Icon">
+      </button>
+      <a href="registro.html" class="no-account">¿No tienes cuenta? Regístrate</a>
+      <a href="registro.html" class="create-account-btn">Crea una cuenta</a>
+    </form>
+  </div>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p>© 2025 MiTurno. Todos los derechos reservados</p>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        <span><i class="fas fa-phone"></i> +54 9 11 4444-4444</span> |
+        <span><i class="fas fa-envelope"></i> miturno@gmail.com</span> |
+        <span><i class="fas fa-map-marker-alt"></i> Av. Corrientes 1353, Bs. As. (Argentina)</span> |
+        <span><i class="fas fa-users"></i> Sobre nosotros</span>
+      </p>
+    </div>
   </footer>
-
-    <script src="js/app.js"></script>
+  <script src="js/login-empresa.js"></script>
 </body>
+
 </html>
