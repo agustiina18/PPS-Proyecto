@@ -2,51 +2,55 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Registro de Usuario</title>
-  <link rel="stylesheet" href="css/style-global.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Empresa</title>
+  <link rel="stylesheet" href="css/style-global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 
 <body>
   <div class="login-container">
     <a href="index.html" class="home-icon-link">
-      <img src="img/home.png" alt="Inicio" class="home-icon" />
+      <img src="img/home.png" alt="Inicio" class="home-icon">
     </a>
-    <img src="img/logo-miturno.png" alt="Mi Turno Logo" class="logo" />
+    <img src="img/logo-miturno.png" alt="Mi Turno Logo" class="logo">
 
-    <form onsubmit="registrarUsuario(event)" class="login-form" id="registroUsuarioForm">
-      <h2>Registro de Usuario</h2>
-
+    <form onsubmit="registrarEmpresa(event)" class="login-form" id="registroEmpresaForm">
       <div class="input-group">
-        <input type="text" id="regNombre" placeholder="Nombre" required />
+        <input type="text" id="regNombreEmpresa" placeholder="Nombre" required>
       </div>
 
       <div class="input-group">
-        <input type="email" id="regEmail" placeholder="Email" required />
+        <input type="email" id="regEmail" placeholder="Email" required>
       </div>
 
       <div class="input-group">
-        <input type="tel" id="regTelefono" placeholder="Teléfono" required />
+        <input type="tel" id="regTelefono" placeholder="Teléfono" required>
       </div>
 
       <div class="input-group">
-        <input type="password" id="regPassword" placeholder="Contraseña" required />
+        <input type="password" id="regPassword" placeholder="Contraseña" required>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="regRepetirPassword" placeholder="Repetir Contraseña" required>
       </div>
 
       <button type="submit" class="submit-btn">Crear Cuenta</button>
 
       <button type="button" class="google-login-btn">
-        <span>Entrar con</span>
-        <img src="img/icono-google.png" alt="Google Icon" />
+        <span>Entrar con</span> <img src="img/icono-google.png" alt="Google Icon">
       </button>
 
-      <a href="login.html" class="no-account">¿Ya tienes una cuenta? Inicia sesión</a>
+      <a href="login.html" class="no-account">¿Ya tienes una cuenta? Inicia Sesión</a>
       <a href="login.html" class="create-account-btn">Iniciar Sesión</a>
+
     </form>
   </div>
 
@@ -67,7 +71,6 @@
       </p>
     </div>
   </footer>
-
   <script src="js/registro-usuario.js"></script>
 </body>
 
